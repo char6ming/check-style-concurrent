@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: concurrent-style-check
+        name: C++ Style Check
+        entry: python3 tools/check_style_concurrent.py
+        language: system
+        files: \.(cpp|c|h|cc|hpp|cxx)$
+        pass_filenames: true
+        verbose: true
